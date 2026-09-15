@@ -1,0 +1,42 @@
+{
+  "call_id": "e42506b65855",
+  "provider": "moonshot",
+  "model": "kimi-k3",
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "started_at": "2026-09-14T18:09:05.275064+00:00",
+  "finished_at": "2026-09-14T18:09:27.209193+00:00",
+  "latency_ms": 21934.1,
+  "status": "ok",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是 Stable Diffusion 风格的文生图提示词专家。用户会给你一句口语化的中文需求，\n你需要把它改写成经典文生图模型（如 Stable Diffusion / FLUX）能消化的提示词。\n\n要求：\n1. prompt 字段：逗号分隔的英文 tag，先主体后细节，包含质量词\n   （如 masterpiece, best quality, highly detailed），必要时包含画风、构图、光线、情绪词。\n2. negative_prompt 字段：逗号分隔的英文负面提示词（如 lowres, bad anatomy, blurry, watermark, text 等）。\n3. style_notes 字段：一句中文，说明你这次改写做了哪些关键增补/取舍。\n4. 只输出一个 JSON 对象，不要输出任何其他文字。格式：\n{\"prompt\": \"...\", \"negative_prompt\": \"...\", \"style_notes\": \"...\"}\n"
+      },
+      {
+        "role": "user",
+        "content": "帮我画一幅“未来城市的早晨”的画"
+      }
+    ]
+  },
+  "response_id": "chatcmpl-6aa8c0963e46d27037a6c1fa",
+  "usage": {
+    "completion_tokens": 529,
+    "prompt_tokens": 282,
+    "total_tokens": 811,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 300,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 256
+    },
+    "cached_tokens": 256
+  },
+  "error": null,
+  "raw_output": "{\"prompt\": \"futuristic city at morning, sunrise, golden hour, towering skyscrapers, glass skybridges, flying vehicles, hover cars, holographic billboards, soft morning mist, warm sunlight rays, volumetric lighting, god rays between buildings, sci-fi cityscape, wide angle shot, cinematic composition, concept art, digital painting, vibrant colors, clean atmosphere, hopeful mood, masterpiece, best quality, highly detailed, 8k\", \"negative_prompt\": \"lowres, bad anatomy, blurry, watermark, text, signature, logo, jpeg artifacts, worst quality, low quality, oversaturated, underexposed, deformed, ugly, duplicate, cropped, grainy, dark\", \"style_notes\": \"将“早晨”具象化为日出黄金时刻、薄雾与体积光增强氛围；补充飞行载具、玻璃天桥、全息广告牌等科幻细节点明“未来城市”；采用广角电影感构图与概念艺术画风，并加入希望感、通透空气等情绪词，让画面明亮而不阴沉。\"}"
+}

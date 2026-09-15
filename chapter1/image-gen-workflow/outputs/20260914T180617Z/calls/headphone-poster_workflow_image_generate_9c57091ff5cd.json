@@ -1,0 +1,24 @@
+{
+  "call_id": "9c57091ff5cd",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis",
+  "started_at": "2026-09-14T18:08:17.118111+00:00",
+  "finished_at": "2026-09-14T18:08:17.311420+00:00",
+  "latency_ms": 193.3,
+  "status": "ok",
+  "request": {
+    "input": {
+      "prompt": "masterpiece, best quality, highly detailed, premium wireless noise-canceling headphones, matte black finish, sleek minimalist design, floating product shot, centered composition, deep midnight blue gradient background, soft moonlight rim lighting, subtle ambient glow, quiet late night atmosphere, solitude and tranquility mood, minimalist high-end commercial poster, studio product photography, cinematic lighting, large negative space for text, sharp focus, 8k, professional advertising photography",
+      "negative_prompt": "lowres, blurry, bad anatomy, watermark, text, signature, logo, cluttered background, messy composition, oversaturated colors, jpeg artifacts, distortion, extra objects, people, hands, busy scene"
+    },
+    "parameters": {
+      "size": "1024*1024",
+      "n": 1
+    }
+  },
+  "response_id": "0951fd84-8c68-9d10-9f2b-e190e268dc45",
+  "usage": {},
+  "error": null,
+  "task_id": "b9b74b98-b9e5-4b20-ae14-ed597a6a1c31"
+}

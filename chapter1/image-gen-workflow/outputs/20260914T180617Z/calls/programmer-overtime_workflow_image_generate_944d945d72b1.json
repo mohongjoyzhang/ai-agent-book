@@ -1,0 +1,24 @@
+{
+  "call_id": "944d945d72b1",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis",
+  "started_at": "2026-09-14T18:06:38.558953+00:00",
+  "finished_at": "2026-09-14T18:06:38.806849+00:00",
+  "latency_ms": 247.9,
+  "status": "ok",
+  "request": {
+    "input": {
+      "prompt": "1boy, programmer, alone in dark office at night, hunched over keyboard, exhausted expression, dark circles under eyes, messy hair, wrinkled hoodie, glowing monitors with code, cold blue screen light on face, scattered coffee cups, empty takeout boxes, crumpled papers, messy desk, empty office chairs in background, rain on window, city lights outside, weekend overtime, gloomy atmosphere, melancholic, lonely, muted colors, dark tones, cinematic lighting, depth of field, digital painting, masterpiece, best quality, highly detailed",
+      "negative_prompt": "lowres, bad anatomy, bad hands, extra fingers, deformed, blurry, worst quality, jpeg artifacts, watermark, text, signature, bright cheerful colors, smiling, sunny, crowded"
+    },
+    "parameters": {
+      "size": "1024*1024",
+      "n": 1
+    }
+  },
+  "response_id": "f4198cb8-9612-9d68-bbc2-5fb22a97a107",
+  "usage": {},
+  "error": null,
+  "task_id": "b5460684-9ae0-4c70-9a98-a7e5ce96a0aa"
+}

@@ -1,0 +1,24 @@
+{
+  "call_id": "40c793fa2655",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis",
+  "started_at": "2026-09-14T18:08:49.155138+00:00",
+  "finished_at": "2026-09-14T18:08:49.397890+00:00",
+  "latency_ms": 242.8,
+  "status": "ok",
+  "request": {
+    "input": {
+      "prompt": "masterpiece, best quality, highly detailed, sci-fi concept art, futuristic office interior, a relaxed programmer reclining in an ergonomic chair, sipping coffee, feet up, watching calmly, multiple floating translucent holographic screens with flowing code streams, a sleek glowing humanoid AGI robot autonomously typing at a workstation, holographic UI panels, blue and cyan neon glow, server racks with blinking lights in background, panoramic window overlooking a futuristic city skyline at dusk, volumetric lighting, screen glow on face, depth of field, cinematic composition, digital painting, intricate details, 8k",
+      "negative_prompt": "lowres, bad anatomy, bad hands, extra fingers, missing fingers, extra limbs, blurry, watermark, text, signature, logo, jpeg artifacts, worst quality, low quality, deformed face, ugly, duplicate, cluttered, oversaturated"
+    },
+    "parameters": {
+      "size": "1024*1024",
+      "n": 1
+    }
+  },
+  "response_id": "a8fbc8e9-3ed4-96ef-b923-3aaaeffdf61d",
+  "usage": {},
+  "error": null,
+  "task_id": "8e0e0d2a-9813-46b4-8fe5-5caaeeaf3e38"
+}

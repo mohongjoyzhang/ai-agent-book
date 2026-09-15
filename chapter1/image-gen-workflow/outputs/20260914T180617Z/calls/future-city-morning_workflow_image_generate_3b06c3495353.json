@@ -1,0 +1,23 @@
+{
+  "call_id": "3b06c3495353",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/tasks/1d932f09-8b77-4a63-a032-cae5aac6f7b6",
+  "started_at": "2026-09-14T18:09:27.427397+00:00",
+  "finished_at": "2026-09-14T18:09:37.793353+00:00",
+  "latency_ms": 10366.0,
+  "status": "ok",
+  "request": {},
+  "response_id": "1004e46a-1ba5-9d24-a00b-cfc1fca99f96",
+  "usage": {
+    "image_count": 1
+  },
+  "error": null,
+  "task_id": "1d932f09-8b77-4a63-a032-cae5aac6f7b6",
+  "task_metrics": {
+    "submit_time": "2026-09-15 11:51:01.775",
+    "scheduled_time": "2026-09-15 11:51:01.833",
+    "end_time": "2026-09-15 11:51:09.483"
+  },
+  "actual_prompt": "Futuristic metropolis at golden hour sunrise: gleaming glass-and-steel skyscrapers pierce a soft peach-and-amber sky, connected by elegant transparent skybridges. Sleek silver hover cars glide along layered aerial highways; holographic billboards project vibrant ads in Japanese, English, and Mandarin. Delicate morning mist curls around building bases, while volumetric god rays slice through the canyon-like streets, illuminating floating transit pods and rooftop gardens. Warm sunlight reflects off curved façades and solar-paneled spires. Cinematic wide-angle composition, ultra-detailed digital painting in concept art style—lush color grading, crisp 8K resolution, clean air, serene yet dynamic energy, hopeful futuristic vision."
+}

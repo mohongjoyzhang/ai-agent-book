@@ -1,0 +1,23 @@
+{
+  "call_id": "1749647d9825",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/tasks/3ffbaa1e-b90c-4fd3-ac0e-077414e1da9f",
+  "started_at": "2026-09-14T18:07:13.545945+00:00",
+  "finished_at": "2026-09-14T18:07:53.874287+00:00",
+  "latency_ms": 40328.4,
+  "status": "ok",
+  "request": {},
+  "response_id": "ebd1c447-a1ff-9843-b3c0-5cd5a3c5c57e",
+  "usage": {
+    "image_count": 1
+  },
+  "error": null,
+  "task_id": "3ffbaa1e-b90c-4fd3-ac0e-077414e1da9f",
+  "task_metrics": {
+    "submit_time": "2026-09-15 11:48:58.187",
+    "scheduled_time": "2026-09-15 11:48:58.233",
+    "end_time": "2026-09-15 11:49:05.841"
+  },
+  "actual_prompt": "Photorealistic 8K still life: A thriving monstera deliciosa with glossy, deeply lobed emerald leaves spilling gracefully from a hand-glazed matte terracotta pot. The pot rests on a sun-warmed, lightly grain-textured oak windowsill. Morning light floods in—soft golden beams pierce delicate ivory linen curtains, illuminating suspended dust motes like tiny stars. Warm ambient glow reflects subtly on leaf surfaces; soft shadows pool beneath stems and pot edges. Shallow depth of field blurs the distant garden view outside the window. Cinematic composition, natural lighting, serene and fresh atmosphere—evoking quiet morning tranquility."
+}

@@ -1,0 +1,97 @@
+$ python examples.py
+
+============================================================
+🎯 Kimi Web Search Agent - 高级示例
+============================================================
+
+选择要运行的示例:
+1. 基础搜索
+2. 批量搜索
+3. 带上下文搜索
+4. 比较搜索
+5. 事实核查
+6. 研究助手
+7. 运行所有示例
+0. 退出
+
+请输入选项 (0-7): 6
+
+============================================================
+📌 示例 6: 研究助手 - 深度研究
+============================================================
+研究主题: 大语言模型的发展历程
+============================================================
+
+研究问题 1: 什么是大语言模型的发展历程？请提供详细定义
+----------------------------------------
+2026-09-14 13:45:44,229 - INFO - 开始调用 Kimi 搜索工具...
+2026-09-14 13:45:44,229 - INFO - 迭代 1/5
+2026-09-14 13:46:02,147 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:46:02,156 - INFO - 模型请求调用 4 个工具
+2026-09-14 13:46:02,156 - INFO - 执行工具: web_search, 参数: {'query': 'large language model definition history timeline transformer attention is all you need BERT GPT RLHF scaling laws', 'classes': ['all', 'academic']}
+2026-09-14 13:46:07,674 - INFO - 执行工具: web_search, 参数: {'query': '大语言模型 定义 发展历程 Transformer GPT BERT RLHF 规模化法则', 'classes': ['all', 'academic']}
+2026-09-14 13:46:09,646 - INFO - 执行工具: web_search, 参数: {'query': '2024 2025 large language model milestones GPT-4o Claude 3.5 Gemini 2.0 Llama 3 DeepSeek R1 reasoning models o1 o3 agents', 'classes': ['all']}
+2026-09-14 13:46:11,588 - INFO - 执行工具: web_search, 参数: {'query': 'LLM survey history language models statistical n-gram neural word embeddings seq2seq transformer pretraining fine-tuning instruction tuning RLHF', 'classes': ['academic']}
+2026-09-14 13:46:13,472 - INFO - 迭代 2/5
+2026-09-14 13:48:12,482 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:48:12,509 - INFO - 成功生成答案
+发现: 下面先给“详细定义”，再按时间线梳理发展历程。近两年模型名称迭代很快，以下重点是技术脉络，而不是穷尽所有型号。
+
+## 1）详细定义：什么是大语言模型？
+
+**大语言模型（Large Language Model, LLM）**是一类以深度神经网络为主、通常基于 **Transformer** 架构构建的语言模型。它在海量文本上通过自监督目标进行预训练，学习词元序列的概率分布，从而获得理解、生成、改写、翻译、摘要、问答、编程和一定程 度推理的能力。
+
+形式化地说，自回归语言模型学习：
+
+\[
+P(x_1,\dots,x_T)=\prod_{t=1}^{T}P_\theta(x_t\mid x_{...
+2026-09-14 13:48:12,510 - INFO - 对话历史已清空
+
+研究问题 2: 大语言模型的发展历程的关键里程碑和重要事件有哪些？
+----------------------------------------
+2026-09-14 13:48:12,510 - INFO - 开始调用 Kimi 搜索工具...
+2026-09-14 13:48:12,510 - INFO - 迭代 1/5
+2026-09-14 13:48:29,489 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:48:29,490 - INFO - 模型请求调用 3 个工具
+2026-09-14 13:48:29,490 - INFO - 执行工具: web_search, 参数: {'query': 'large language models timeline key milestones 2017 Transformer 2020 GPT-3 2022 ChatGPT 2024 2025 reasoning models', 'classes': ['all', 'academic', 'code']}
+2026-09-14 13:48:31,091 - INFO - 执行工具: web_search, 参数: {'query': '2024 2025 2026 major LLM releases GPT-4o o1 o3 Claude 3.5 4 Gemini 2.0 2.5 Llama 3 4 DeepSeek R1 V3 dates', 'classes': ['all']}
+2026-09-14 13:48:33,035 - INFO - 执行工具: web_search, 参数: {'query': '大语言模型 发展历程 里程碑 2024 2025 DeepSeek R1 推理模型 开源模型', 'classes': ['all']}
+2026-09-14 13:48:34,986 - INFO - 迭代 2/5
+2026-09-14 13:48:46,558 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:48:46,559 - INFO - 模型请求调用 2 个工具
+2026-09-14 13:48:46,560 - INFO - 执行工具: web_search, 参数: {'query': 'OpenAI GPT-5 release date August 2025 Claude Opus 4 Gemini 2.5 Pro release 2025', 'classes': ['all']}
+2026-09-14 13:48:47,926 - INFO - 执行工具: web_search, 参数: {'query': 'BERT 2018 ELMo word2vec 2013 seq2seq attention 2014 2015 NLP pre-training history', 'classes': ['all', 'academic']}
+2026-09-14 13:48:49,483 - INFO - 迭代 3/5
+2026-09-14 13:49:57,442 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:49:57,462 - INFO - 成功生成答案
+发现: # 大语言模型发展历程：关键里程碑与重要事件
+
+大语言模型（LLM）的发展可以划分为七个阶段，以下按时间线梳理核心里程碑：
+
+---
+
+## 一、奠基时期（1950s–2012）：从规则到统计
+
+- **1950年**：图灵提出"图灵测试"，首次探讨机器能否展现智能语言能力
+- **1966年**：MIT 的 **ELIZA** 聊天程序问世，基于规则匹配模拟对话
+- **1980s–1990s**：统计方法兴起，**N-gram 语言模型**成为主流，机器翻译开始数据驱动化
+- **2003年**：Bengio 等人提出**神经网络语言模型**，首次用神经网络学习词的概率分布，埋下深度学习的...
+2026-09-14 13:49:57,462 - INFO - 对话历史已清空
+
+研究问题 3: 大语言模型的发展历程面临的主要挑战是什么？
+----------------------------------------
+2026-09-14 13:49:57,462 - INFO - 开始调用 Kimi 搜索工具...
+2026-09-14 13:49:57,462 - INFO - 迭代 1/5
+2026-09-14 13:50:11,895 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:50:11,896 - INFO - 模型请求调用 2 个工具
+2026-09-14 13:50:11,896 - INFO - 执行工具: web_search, 参数: {'query': '大语言模型 发展历程 挑战 综述 scaling law 幻觉 对齐', 'classes': ['all', 'academic']}
+2026-09-14 13:50:14,506 - INFO - 执行工具: web_search, 参数: {'query': 'large language models history development challenges survey scaling laws hallucination alignment evaluation', 'classes': ['all', 'academic']}
+2026-09-14 13:50:16,927 - INFO - 迭代 2/5
+2026-09-14 13:50:27,125 - INFO - HTTP Request: POST https://api.moonshot.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 13:50:27,126 - INFO - 模型请求调用 3 个工具
+2026-09-14 13:50:27,126 - INFO - 执行工具: web_search, 参数: {'query': '大语言模型 挑战 算力 数据瓶颈 scaling law 能耗 成本 综述 2024 2025', 'classes': ['all', 'academic']}
+2026-09-14 13:50:29,138 - INFO - 执行工具: web_search, 参数: {'query': 'LLM challenges scaling laws data wall compute cost evaluation benchmark contamination safety alignment interpretability survey', 'classes': ['academic', 'all']}
+2026-09-14 13:50:34,545 - INFO - 执行工具: web_search, 参数: {'query': '大语言模型 安全 对齐 隐私 版权 偏见 监管 挑战 综述', 'classes': ['all', 'academic']}
+2026-09-14 13:50:36,737 - INFO - 迭代 3/5
+^C
+程序被中断

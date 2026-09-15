@@ -1,0 +1,20 @@
+run_id=20260914T180617Z  需求 5 句 × 路线 ['workflow']
+
+=== [workflow] programmer-overtime: 帮我画一个周末加班的程序员，风格丧一点
+    -> outputs/20260914T180617Z/images/programmer-overtime_workflow.png (1053043 bytes)
+
+=== [workflow] windowsill-plant: 帮我画一盆放在窗台上的绿植，早晨的阳光刚好照进来
+    -> outputs/20260914T180617Z/images/windowsill-plant_workflow.png (1236232 bytes)
+
+=== [workflow] headphone-poster: 帮我做一张新款降噪耳机的产品海报，主打“深夜独处也清净”这句文案，风格简约高级
+    -> outputs/20260914T180617Z/images/headphone-poster_workflow.png (954742 bytes)
+
+=== [workflow] agi-programmer: 帮我画一个 AGI 实现以后程序员的工作场景
+    -> outputs/20260914T180617Z/images/agi-programmer_workflow.png (1197623 bytes)
+
+=== [workflow] future-city-morning: 帮我画一幅“未来城市的早晨”的画
+    -> outputs/20260914T180617Z/images/future-city-morning_workflow.png (1283217 bytes)
+
+完成: 5/5 次运行成功
+manifest: /home/xiaohuihui/learn/datawhale/ai-agent-book/chapter1/image-gen-workflow/validation/real_20260914T180617Z/evidence.json
+sha256:   3705b553cbc751dce4cb34ecfb27377552d7eae34e6947efe3e4ef72f7083ba6

@@ -1,0 +1,42 @@
+{
+  "call_id": "690ac818edab",
+  "provider": "moonshot",
+  "model": "kimi-k3",
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "started_at": "2026-09-14T18:06:49.563197+00:00",
+  "finished_at": "2026-09-14T18:07:13.304892+00:00",
+  "latency_ms": 23741.7,
+  "status": "ok",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是 Stable Diffusion 风格的文生图提示词专家。用户会给你一句口语化的中文需求，\n你需要把它改写成经典文生图模型（如 Stable Diffusion / FLUX）能消化的提示词。\n\n要求：\n1. prompt 字段：逗号分隔的英文 tag，先主体后细节，包含质量词\n   （如 masterpiece, best quality, highly detailed），必要时包含画风、构图、光线、情绪词。\n2. negative_prompt 字段：逗号分隔的英文负面提示词（如 lowres, bad anatomy, blurry, watermark, text 等）。\n3. style_notes 字段：一句中文，说明你这次改写做了哪些关键增补/取舍。\n4. 只输出一个 JSON 对象，不要输出任何其他文字。格式：\n{\"prompt\": \"...\", \"negative_prompt\": \"...\", \"style_notes\": \"...\"}\n"
+      },
+      {
+        "role": "user",
+        "content": "帮我画一盆放在窗台上的绿植，早晨的阳光刚好照进来"
+      }
+    ]
+  },
+  "response_id": "chatcmpl-6aa8c01630fb63d77c82be9b",
+  "usage": {
+    "completion_tokens": 688,
+    "prompt_tokens": 286,
+    "total_tokens": 974,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 465,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 256
+    },
+    "cached_tokens": 256
+  },
+  "error": null,
+  "raw_output": "{\"prompt\": \"masterpiece, best quality, highly detailed, a potted green plant, lush vibrant green leaves, ceramic flowerpot, sitting on a wooden windowsill, morning sunlight streaming through the window, soft golden sunbeams, gentle light rays, tiny dust particles glowing in the light, white sheer curtains, warm cozy atmosphere, fresh peaceful mood, soft shadows, shallow depth of field, natural lighting, cinematic composition, photorealistic, 8k\", \"negative_prompt\": \"lowres, worst quality, low quality, blurry, bad anatomy, deformed, ugly, watermark, text, signature, logo, jpeg artifacts, oversaturated, overexposed, duplicate, cropped, out of frame\", \"style_notes\": \"在主体'窗台绿植'基础上，强化了'晨光'这一核心氛围：补充了金色光束、光尘、白纱帘等细节来具象化'阳光刚好照进来'的瞬间，并选用写实摄影风格加浅景深构图，让画面更有清晨宁静温暖的质感。\"}"
+}

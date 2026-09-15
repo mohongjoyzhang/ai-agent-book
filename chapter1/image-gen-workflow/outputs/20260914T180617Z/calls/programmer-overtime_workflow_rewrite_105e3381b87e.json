@@ -1,0 +1,42 @@
+{
+  "call_id": "105e3381b87e",
+  "provider": "moonshot",
+  "model": "kimi-k3",
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "started_at": "2026-09-14T18:06:17.820165+00:00",
+  "finished_at": "2026-09-14T18:06:38.558898+00:00",
+  "latency_ms": 20738.7,
+  "status": "ok",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是 Stable Diffusion 风格的文生图提示词专家。用户会给你一句口语化的中文需求，\n你需要把它改写成经典文生图模型（如 Stable Diffusion / FLUX）能消化的提示词。\n\n要求：\n1. prompt 字段：逗号分隔的英文 tag，先主体后细节，包含质量词\n   （如 masterpiece, best quality, highly detailed），必要时包含画风、构图、光线、情绪词。\n2. negative_prompt 字段：逗号分隔的英文负面提示词（如 lowres, bad anatomy, blurry, watermark, text 等）。\n3. style_notes 字段：一句中文，说明你这次改写做了哪些关键增补/取舍。\n4. 只输出一个 JSON 对象，不要输出任何其他文字。格式：\n{\"prompt\": \"...\", \"negative_prompt\": \"...\", \"style_notes\": \"...\"}\n"
+      },
+      {
+        "role": "user",
+        "content": "帮我画一个周末加班的程序员，风格丧一点"
+      }
+    ]
+  },
+  "response_id": "chatcmpl-6aa8bff8f62de6962ad7a2aa",
+  "usage": {
+    "completion_tokens": 502,
+    "prompt_tokens": 284,
+    "total_tokens": 786,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 270,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 256
+    },
+    "cached_tokens": 256
+  },
+  "error": null,
+  "raw_output": "{\"prompt\": \"1boy, programmer, alone in dark office at night, hunched over keyboard, exhausted expression, dark circles under eyes, messy hair, wrinkled hoodie, glowing monitors with code, cold blue screen light on face, scattered coffee cups, empty takeout boxes, crumpled papers, messy desk, empty office chairs in background, rain on window, city lights outside, weekend overtime, gloomy atmosphere, melancholic, lonely, muted colors, dark tones, cinematic lighting, depth of field, digital painting, masterpiece, best quality, highly detailed\", \"negative_prompt\": \"lowres, bad anatomy, bad hands, extra fingers, deformed, blurry, worst quality, jpeg artifacts, watermark, text, signature, bright cheerful colors, smiling, sunny, crowded\", \"style_notes\": \"增补了深夜空办公室、屏幕蓝光、咖啡杯外卖盒等加班符号，用冷色调、雨夜、驼背疲惫神态和『dark circles』来强化『丧』的情绪，负面词里特意排除明快色彩和笑容以防画风跑偏。\"}"
+}

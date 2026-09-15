@@ -1,0 +1,23 @@
+{
+  "call_id": "ab9c1e671785",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/tasks/b9b74b98-b9e5-4b20-ae14-ed597a6a1c31",
+  "started_at": "2026-09-14T18:08:17.311556+00:00",
+  "finished_at": "2026-09-14T18:08:27.654012+00:00",
+  "latency_ms": 10342.5,
+  "status": "ok",
+  "request": {},
+  "response_id": "61b282fa-7f73-913e-8e9e-a8cf6f9e1884",
+  "usage": {
+    "image_count": 1
+  },
+  "error": null,
+  "task_id": "b9b74b98-b9e5-4b20-ae14-ed597a6a1c31",
+  "task_metrics": {
+    "submit_time": "2026-09-15 11:49:57.056",
+    "scheduled_time": "2026-09-15 11:49:57.093",
+    "end_time": "2026-09-15 11:50:05.325"
+  },
+  "actual_prompt": "Premium studio product photography, ultra-high-resolution 8K shot of top-tier wireless noise-canceling headphones in matte black finish—sleek, ergonomic, with precision-milled aluminum ear cups and memory-foam earpads. Centered floating composition against a deep midnight blue gradient backdrop evoking quiet night sky. Soft cinematic rim lighting casts gentle moonlight glow along contours; subtle ambient halo enhances texture and depth. Minimalist high-end commercial aesthetic: vast negative space for typography, sharp focus on tactile details—stitching, metallic accents, matte-to-satin finish transitions. Mood of serene solitude and refined calm. Shot on medium-format digital camera with shallow depth of field and controlled studio lighting."
+}

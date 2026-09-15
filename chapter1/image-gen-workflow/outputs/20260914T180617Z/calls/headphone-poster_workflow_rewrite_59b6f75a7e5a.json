@@ -1,0 +1,42 @@
+{
+  "call_id": "59b6f75a7e5a",
+  "provider": "moonshot",
+  "model": "kimi-k3",
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "started_at": "2026-09-14T18:07:54.414035+00:00",
+  "finished_at": "2026-09-14T18:08:17.118058+00:00",
+  "latency_ms": 22704.0,
+  "status": "ok",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是 Stable Diffusion 风格的文生图提示词专家。用户会给你一句口语化的中文需求，\n你需要把它改写成经典文生图模型（如 Stable Diffusion / FLUX）能消化的提示词。\n\n要求：\n1. prompt 字段：逗号分隔的英文 tag，先主体后细节，包含质量词\n   （如 masterpiece, best quality, highly detailed），必要时包含画风、构图、光线、情绪词。\n2. negative_prompt 字段：逗号分隔的英文负面提示词（如 lowres, bad anatomy, blurry, watermark, text 等）。\n3. style_notes 字段：一句中文，说明你这次改写做了哪些关键增补/取舍。\n4. 只输出一个 JSON 对象，不要输出任何其他文字。格式：\n{\"prompt\": \"...\", \"negative_prompt\": \"...\", \"style_notes\": \"...\"}\n"
+      },
+      {
+        "role": "user",
+        "content": "帮我做一张新款降噪耳机的产品海报，主打“深夜独处也清净”这句文案，风格简约高级"
+      }
+    ]
+  },
+  "response_id": "chatcmpl-6aa8c051bf6b0fa3ca0de949",
+  "usage": {
+    "completion_tokens": 682,
+    "prompt_tokens": 295,
+    "total_tokens": 977,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 468,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 256
+    },
+    "cached_tokens": 256
+  },
+  "error": null,
+  "raw_output": "{\"prompt\": \"masterpiece, best quality, highly detailed, premium wireless noise-canceling headphones, matte black finish, sleek minimalist design, floating product shot, centered composition, deep midnight blue gradient background, soft moonlight rim lighting, subtle ambient glow, quiet late night atmosphere, solitude and tranquility mood, minimalist high-end commercial poster, studio product photography, cinematic lighting, large negative space for text, sharp focus, 8k, professional advertising photography\", \"negative_prompt\": \"lowres, blurry, bad anatomy, watermark, text, signature, logo, cluttered background, messy composition, oversaturated colors, jpeg artifacts, distortion, extra objects, people, hands, busy scene\", \"style_notes\": \"将「深夜独处也清净」转译为深夜蓝黑渐变背景+月光轮廓光+大面积留白的孤独静谧氛围，主打高级商业产品摄影质感；文案文字刻意放入负面提示词，建议生成后由设计后期排版，避免模型生成乱码文字。\"}"
+}

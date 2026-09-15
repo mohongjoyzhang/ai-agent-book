@@ -1,0 +1,23 @@
+{
+  "call_id": "fa9798ee6277",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/tasks/8e0e0d2a-9813-46b4-8fe5-5caaeeaf3e38",
+  "started_at": "2026-09-14T18:08:49.397938+00:00",
+  "finished_at": "2026-09-14T18:09:04.809128+00:00",
+  "latency_ms": 15411.2,
+  "status": "ok",
+  "request": {},
+  "response_id": "957e08fd-3bdf-99f6-904a-64c1680f9b04",
+  "usage": {
+    "image_count": 1
+  },
+  "error": null,
+  "task_id": "8e0e0d2a-9813-46b4-8fe5-5caaeeaf3e38",
+  "task_metrics": {
+    "submit_time": "2026-09-15 11:50:26.672",
+    "scheduled_time": "2026-09-15 11:50:26.721",
+    "end_time": "2026-09-15 11:50:38.757"
+  },
+  "actual_prompt": "Sci-fi concept art, cinematic digital painting: A relaxed programmer in a sleek black hoodie reclines in an ergonomic carbon-fiber chair, bare feet propped on a floating ottoman, sipping steaming coffee from a matte ceramic mug. Around them, translucent holographic screens drift mid-air—streaming cascading green-and-cyan code, interactive graphs, and 3D neural network visualizations. A slender, pearlescent humanoid AGI robot with soft bioluminescent joints types autonomously at a curved glass workstation. Background features glowing server racks with rhythmic amber-blue LEDs and a floor-to-ceiling panoramic window revealing a rain-slicked futuristic metropolis at dusk—neon-lit spires, aerial transit lanes, and hovering ad drones. Volumetric light rays pierce through misty twilight; shallow depth of field emphasizes screen glow on the programmer’s calm face. Ultra-detailed, 8K resolution, cinematic color grading."
+}

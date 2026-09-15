@@ -1,0 +1,24 @@
+{
+  "call_id": "6167d0fe7c17",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis",
+  "started_at": "2026-09-14T18:09:27.209259+00:00",
+  "finished_at": "2026-09-14T18:09:27.427300+00:00",
+  "latency_ms": 218.1,
+  "status": "ok",
+  "request": {
+    "input": {
+      "prompt": "futuristic city at morning, sunrise, golden hour, towering skyscrapers, glass skybridges, flying vehicles, hover cars, holographic billboards, soft morning mist, warm sunlight rays, volumetric lighting, god rays between buildings, sci-fi cityscape, wide angle shot, cinematic composition, concept art, digital painting, vibrant colors, clean atmosphere, hopeful mood, masterpiece, best quality, highly detailed, 8k",
+      "negative_prompt": "lowres, bad anatomy, blurry, watermark, text, signature, logo, jpeg artifacts, worst quality, low quality, oversaturated, underexposed, deformed, ugly, duplicate, cropped, grainy, dark"
+    },
+    "parameters": {
+      "size": "1024*1024",
+      "n": 1
+    }
+  },
+  "response_id": "6d51c28f-2cb4-94da-a834-0f273b29cf5e",
+  "usage": {},
+  "error": null,
+  "task_id": "1d932f09-8b77-4a63-a032-cae5aac6f7b6"
+}

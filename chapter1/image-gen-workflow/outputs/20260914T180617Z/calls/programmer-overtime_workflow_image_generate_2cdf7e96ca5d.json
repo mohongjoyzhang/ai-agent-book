@@ -1,0 +1,23 @@
+{
+  "call_id": "2cdf7e96ca5d",
+  "provider": "dashscope",
+  "model": "wan2.2-t2i-flash",
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1/tasks/b5460684-9ae0-4c70-9a98-a7e5ce96a0aa",
+  "started_at": "2026-09-14T18:06:38.806897+00:00",
+  "finished_at": "2026-09-14T18:06:49.116831+00:00",
+  "latency_ms": 10310.0,
+  "status": "ok",
+  "request": {},
+  "response_id": "5d273fa5-fd30-9b1e-b68e-cbc5c24a24b9",
+  "usage": {
+    "image_count": 1
+  },
+  "error": null,
+  "task_id": "b5460684-9ae0-4c70-9a98-a7e5ce96a0aa",
+  "task_metrics": {
+    "submit_time": "2026-09-15 11:48:26.125",
+    "scheduled_time": "2026-09-15 11:48:26.169",
+    "end_time": "2026-09-15 11:48:35.021"
+  },
+  "actual_prompt": "Cinematic digital painting of a young male programmer working late on a rainy weekend night. He sits hunched over a cluttered desk in a dim, empty office—hoodie wrinkled, hair disheveled, dark circles under tired eyes, face softly lit by the cold blue glow of multiple monitors displaying dense code. Scattered coffee cups, crumpled notes, and discarded takeout containers litter the surface. Empty ergonomic chairs recede into shallow depth of field. Rain streaks the large window behind him, revealing blurred amber city lights through misted glass. Muted teal, charcoal, and slate palette; chiaroscuro lighting enhances melancholy solitude and quiet exhaustion. Ultra-detailed, photorealistic texture, 8K resolution."
+}

@@ -1,0 +1,42 @@
+{
+  "call_id": "f05c31a885a7",
+  "provider": "moonshot",
+  "model": "kimi-k3",
+  "endpoint": "https://api.moonshot.cn/v1/chat/completions",
+  "started_at": "2026-09-14T18:08:27.891860+00:00",
+  "finished_at": "2026-09-14T18:08:49.155047+00:00",
+  "latency_ms": 21263.2,
+  "status": "ok",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是 Stable Diffusion 风格的文生图提示词专家。用户会给你一句口语化的中文需求，\n你需要把它改写成经典文生图模型（如 Stable Diffusion / FLUX）能消化的提示词。\n\n要求：\n1. prompt 字段：逗号分隔的英文 tag，先主体后细节，包含质量词\n   （如 masterpiece, best quality, highly detailed），必要时包含画风、构图、光线、情绪词。\n2. negative_prompt 字段：逗号分隔的英文负面提示词（如 lowres, bad anatomy, blurry, watermark, text 等）。\n3. style_notes 字段：一句中文，说明你这次改写做了哪些关键增补/取舍。\n4. 只输出一个 JSON 对象，不要输出任何其他文字。格式：\n{\"prompt\": \"...\", \"negative_prompt\": \"...\", \"style_notes\": \"...\"}\n"
+      },
+      {
+        "role": "user",
+        "content": "帮我画一个 AGI 实现以后程序员的工作场景"
+      }
+    ]
+  },
+  "response_id": "chatcmpl-6aa8c06f1131fb4daf9b2f47",
+  "usage": {
+    "completion_tokens": 807,
+    "prompt_tokens": 284,
+    "total_tokens": 1091,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 539,
+      "rejected_prediction_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 256
+    },
+    "cached_tokens": 256
+  },
+  "error": null,
+  "raw_output": "{\"prompt\": \"masterpiece, best quality, highly detailed, sci-fi concept art, futuristic office interior, a relaxed programmer reclining in an ergonomic chair, sipping coffee, feet up, watching calmly, multiple floating translucent holographic screens with flowing code streams, a sleek glowing humanoid AGI robot autonomously typing at a workstation, holographic UI panels, blue and cyan neon glow, server racks with blinking lights in background, panoramic window overlooking a futuristic city skyline at dusk, volumetric lighting, screen glow on face, depth of field, cinematic composition, digital painting, intricate details, 8k\", \"negative_prompt\": \"lowres, bad anatomy, bad hands, extra fingers, missing fingers, extra limbs, blurry, watermark, text, signature, logo, jpeg artifacts, worst quality, low quality, deformed face, ugly, duplicate, cluttered, oversaturated\", \"style_notes\": \"把「AGI 之后的程序员」具象化为一种对比场景：人类悠闲喝咖啡监督、人形 AGI 机器人自主写代码，以此传达主题；增补了全息代码流、服务器背景、落地窗外未来城市等科幻细节，并采用电影感光效与概念插画风格来强化后 AGI 时代的氛围感。\"}"
+}
