@@ -1,0 +1,83 @@
+$ python benchmark.py --scenario all --backend vllm --base-url http://192.168.1.2:8234/v1 --model qwen3-0.6b --prefix-tokens 4096 --repeats 5 --temperature 0 --max-tokens 512 --output /home/xiaohuihui/learn/datawhale/ai-agent-book-notebook/chapter2/local_llm_serving/benchmark_all.json
+
+2026-09-19 23:12:44,645 - benchmark - INFO - 连接服务端: http://192.168.1.2:8234/v1（模型: qwen3-0.6b）
+2026-09-19 23:12:44,645 - benchmark - INFO - 开始场景: throughput
+2026-09-19 23:12:44,995 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:12:51,414 - benchmark - INFO - throughput 第 1/5 次: TTFT=0.568s, 解码=82.6 tok/s, 输出=512 tok
+2026-09-19 23:12:51,435 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:12:57,946 - benchmark - INFO - throughput 第 2/5 次: TTFT=0.135s, 解码=80.0 tok/s, 输出=512 tok
+2026-09-19 23:12:57,959 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:03,975 - benchmark - INFO - throughput 第 3/5 次: TTFT=0.074s, 解码=86.0 tok/s, 输出=512 tok
+2026-09-19 23:13:03,989 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:09,975 - benchmark - INFO - throughput 第 4/5 次: TTFT=0.071s, 解码=86.4 tok/s, 输出=512 tok
+2026-09-19 23:13:09,986 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:16,003 - benchmark - INFO - throughput 第 5/5 次: TTFT=0.068s, 解码=85.9 tok/s, 输出=512 tok
+2026-09-19 23:13:16,003 - benchmark - INFO - 开始场景: kv-cache
+2026-09-19 23:13:16,017 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:26,715 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:28,057 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:39,722 - benchmark - INFO - kv-cache 第 1/5 次: 命中 TTFT=0.116s, 未命中 TTFT=9.766s
+2026-09-19 23:13:39,732 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:41,304 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:52,335 - benchmark - INFO - kv-cache 第 2/5 次: 命中 TTFT=0.338s, 未命中 TTFT=9.799s
+2026-09-19 23:13:52,350 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:13:53,945 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:06,069 - benchmark - INFO - kv-cache 第 3/5 次: 命中 TTFT=0.328s, 未命中 TTFT=9.746s
+2026-09-19 23:14:06,083 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:07,633 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:19,294 - benchmark - INFO - kv-cache 第 4/5 次: 命中 TTFT=0.290s, 未命中 TTFT=9.736s
+2026-09-19 23:14:19,306 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:20,919 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:32,486 - benchmark - INFO - kv-cache 第 5/5 次: 命中 TTFT=0.351s, 未命中 TTFT=9.776s
+2026-09-19 23:14:32,486 - benchmark - INFO - 开始场景: batching
+2026-09-19 23:14:32,497 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:38,896 - benchmark - INFO - batching 并发=1: 聚合吞吐=79.9 tok/s, 单请求=79.9 tok/s, 墙钟=6.41s
+2026-09-19 23:14:38,909 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:38,910 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:46,558 - benchmark - INFO - batching 并发=2: 聚合吞吐=133.6 tok/s, 单请求=66.8 tok/s, 墙钟=7.66s
+2026-09-19 23:14:46,572 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:46,572 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:46,581 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:14:46,588 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,193 - benchmark - INFO - batching 并发=4: 聚合吞吐=148.5 tok/s, 单请求=37.1 tok/s, 墙钟=13.64s
+2026-09-19 23:15:00,208 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,213 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,221 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,227 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,233 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,236 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,243 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:00,252 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:15:27,568 - benchmark - INFO - batching 并发=8: 聚合吞吐=146.8 tok/s, 单请求=18.4 tok/s, 墙钟=27.37s
+2026-09-19 23:15:27,569 - benchmark - INFO - 结果已写入: /home/xiaohuihui/learn/datawhale/ai-agent-book-notebook/chapter2/local_llm_serving/benchmark_all.json
+====================================================================
+🚀 本地 LLM 服务性能基准（实验 2-1）
+====================================================================
+
+====================================================================
+本地 LLM 服务基准结果
+====================================================================
+
+[throughput] 单流吞吐 / 首 token 延迟
+  次数           : 5
+  平均 TTFT      : 0.183 s
+  平均解码吞吐   : 84.2 tok/s
+  平均输出长度   : 512 tok
+
+[kv-cache] 前缀缓存命中 vs 未命中（TTFT）
+  前缀长度(约)   : 4096 tok
+  命中平均 TTFT  : 0.285 s
+  未命中平均TTFT : 9.765 s
+  缓存加速比     : 34.28x
+
+[batching] 并发度对聚合吞吐的影响
+    并发 |    聚合tok/s |     单请求tok/s |   平均TTFT(s) |    墙钟(s)
+  -----+------------+--------------+-------------+---------
+     1 |       79.9 |         79.9 |       0.296 |     6.41
+     2 |      133.6 |         66.8 |       0.149 |     7.66
+     4 |      148.5 |         37.1 |       2.937 |    13.64
+     8 |      146.8 |         18.4 |      11.016 |    27.37
+
+====================================================================
+
+exit_code=0

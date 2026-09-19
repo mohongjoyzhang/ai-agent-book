@@ -1,0 +1,41 @@
+$ python main.py --backend vllm --mode single --task "What are the current time and weather in Vancouver? Call both tools."
+
+2026-09-19 23:11:59,267 - __main__ - INFO - Initializing on Linux with vllm
+2026-09-19 23:12:02,940 - agent - INFO - Initialized VLLMToolAgent with server at http://192.168.1.2:8234/v1
+2026-09-19 23:12:02,940 - __main__ - INFO - ✅ vLLM agent initialized
+2026-09-19 23:12:02,940 - agent - INFO - ReAct stream iteration 1
+2026-09-19 23:12:04,398 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 23:12:12,921 - agent - INFO - ReAct stream iteration 2
+2026-09-19 23:12:12,937 - httpx - INFO - HTTP Request: POST http://192.168.1.2:8234/v1/chat/completions "HTTP/1.1 200 OK"
+============================================================
+🚀 Universal Tool Calling Agent
+============================================================
+
+⚙️  Initializing agent...
+✅ Agent ready! Using vllm backend
+
+============================================================
+TASK EXECUTION
+============================================================
+
+📋 Task: What are the current time and weather in Vancouver? Call both tools.
+------------------------------------------------------------
+
+⏳ Processing (streaming)...
+
+
+
+🔧 Tool Calls:
+  → get_current_time: {'timezone': 'America/Vancouver'}
+  → get_current_temperature: {'location': 'Vancouver', 'unit': 'celsius'}
+    ✓ {"timezone": "America/Vancouver", "datetime": "2026-09-19 08:12:10", "date": "2026-09-19", "time": "08:12:10", "day_of_week": "Saturday", "utc_offset": "-0700", "timestamp": "2026-09-19T08:12:10.543101-07:00"}
+    ✓ {"location": "Vancouver, Canada", "temperature": 10.9, "unit": "\u00b0C", "conditions": "overcast", "humidity": 95, "wind_speed": 4.8, "wind_unit": "km/h", "coordinates": {"latitude": 49.24966, "longitude": -123.11934}, "timestamp": "2026-09-19T08:00", "source": "Open-Meteo"}
+
+🤖 Assistant: Here are your current time and weather details in Vancouver:
+
+- **Time**: 08:12 (Saturday, 2026-09-19)  
+- **Weather**: Overcast with 95% humidity and wind speed of 4.8 km/h.  
+- **Coordinates**: Latitude 49.24966, Longitude -123.11934.  
+
+Let me know if you need further assistance!
+----------------------------------------

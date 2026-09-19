@@ -1,0 +1,18 @@
+$ python benchmark.py --scenario kv-cache --backend vllm --base-url http://192.168.1.2:1234/v1 --model qwen/qwen3.5-9b --prefix-tokens 4096 --repeats 5 --temperature 0 --max-tokens 512 --output /home/xiaohuihui/learn/datawhale/ai-agent-book-notebook/chapter2/local_llm_serving/benchmark_kv_cache.json
+
+2026-09-16 16:11:46,494 - benchmark - INFO - 连接服务端: http://192.168.1.2:1234/v1（模型: qwen/qwen3.5-9b）
+2026-09-16 16:11:46,495 - benchmark - INFO - 开始场景: kv-cache
+2026-09-16 16:11:46,916 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:13:52,201 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:15:08,768 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:17:26,603 - benchmark - INFO - kv-cache 第 1/5 次: 命中 TTFT=0.289s, 未命中 TTFT=53.633s
+2026-09-16 16:17:26,626 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:18:55,711 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:21:01,780 - benchmark - INFO - kv-cache 第 2/5 次: 命中 TTFT=0.557s, 未命中 TTFT=51.643s
+2026-09-16 16:21:01,810 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:22:16,862 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:24:23,220 - benchmark - INFO - kv-cache 第 3/5 次: 命中 TTFT=0.505s, 未命中 TTFT=51.023s
+2026-09-16 16:24:23,243 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-16 16:25:42,519 - httpx2 - INFO - HTTP Request: POST http://192.168.1.2:1234/v1/chat/completions "HTTP/1.1 200 OK"
+
+exit=0
